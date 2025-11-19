@@ -1,0 +1,49 @@
+{
+  "name": "spotnow",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"node server.js\" \"vite\"",
+    "server": "node server.js",
+    "client": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "concurrently \"node server.js\" \"vite preview\"",
+    "db:push": "drizzle-kit push",
+    "db:generate": "drizzle-kit generate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@google/genai": "^1.28.0",
+    "@neondatabase/serverless": "^1.0.2",
+    "@types/google.maps": "^3.58.1",
+    "@types/leaflet": "^1.9.21",
+    "@types/leaflet-routing-machine": "^3.2.9",
+    "cors": "^2.8.5",
+    "drizzle-kit": "^0.31.6",
+    "drizzle-orm": "^0.44.7",
+    "express": "^5.1.0",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "leaflet": "^1.9.4",
+    "leaflet-routing-machine": "^3.2.12",
+    "leaflet.fullscreen": "^4.0.0",
+    "qrcode": "^1.5.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "ws": "^8.18.3"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "latest",
+    "concurrently": "^9.2.1",
+    "typescript": "^5.5.3",
+    "vite": "latest"
+  }
+}
